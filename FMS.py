@@ -18,7 +18,7 @@ class login:
         self.root.resizable(False,False)
         
         
-        self.ico =Image.open(r"D:\phython\FMS\main2.jpg")
+        self.ico =Image.open(r"D:\phython\FMS\FLIGHT-BOOKING-SYSTEM-OPEN-CV-\main2.jpg")
 
         self.ico = self.ico.resize((1100, 600),Image.ANTIALIAS)
         self.photo =ImageTk.PhotoImage(self.ico)
@@ -47,7 +47,7 @@ class login:
         self.Frame_login= Frame(self.root,bg="#F5F5F5")
         self.Frame_login.place(x=350,y=150,height=340,width=400)
 
-        load =Image.open(r"D:\phython\FMS\login1.png")
+        load =Image.open(r"D:\phython\FMS\FLIGHT-BOOKING-SYSTEM-OPEN-CV-\login1.png")
         load= load.resize((100, 100),Image.ANTIALIAS)
         render = ImageTk.PhotoImage(load)
         
@@ -249,7 +249,7 @@ class login:
         elif self.text_passw.get()!="admin" or self.text_user.get()!="admin":
             messagebox.showerror("ERROR","invalid INPUT",parent=self.root)
         else:
-            self.ico =Image.open(r"D:\phython\FMS\colck2.jpg")
+            self.ico =Image.open(r"D:\phython\FMS\FLIGHT-BOOKING-SYSTEM-OPEN-CV-\colck2.jpg")
 
             self.ico = self.ico.resize((1100, 600),Image.ANTIALIAS)
             self.photo =ImageTk.PhotoImage(self.ico)
